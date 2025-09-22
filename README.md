@@ -1,17 +1,22 @@
 # tera-villa
+
 play ground
 
-dependencies
+### Dependencies
 A Node.js + TypeScript + Express project.
+
+```bash
 npm install
-npm run dev 
+npm run dev
 npm start
+
+
 
 tera-villa/
 │── .gitignore
 │── package.json
 │── tsconfig.json
-│── nodemon.json            
+│── nodemon.json
 │── README.md
 │
 ├── src/
@@ -29,13 +34,13 @@ tera-villa/
 │   │   │   └── home.ts
 │   │   ├── controllers/   # Route logic
 │   │   │   └── homeController.ts
-│   │   ├── middleware/    
-│   │   ├── services/       
+│   │   ├── middleware/
+│   │   ├── services/
 │   │   └── utils/         # Helpers/utilities
+│   │       └── config/    # Config files
+│   │           └── appConfig.ts
 │   │
-│   └── config/            # Config files
-│       └── appConfig.ts
+│   └── dist/              # Compiled JavaScript (after tsc)
 │
-└── dist/                  # Compiled JavaScript (after `tsc`)
-    ├── public/
+└── public/
     └── server/
